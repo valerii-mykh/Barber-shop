@@ -1,7 +1,123 @@
+:root {
+    --main-btn-color: #fff;
+    --second-btn-color: #303030;
+    --main-title-color: #fff;
+    --second-title-color: #303030;
+    --accent-color: #fff;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
-    font-family: 'Raleway', sans-serif;
+.link {
+    text-decoration: none;
+}
+
+.header {
+    background: gray;
+}
+
+li {
+    list-style: none;
+}
+
+.header-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: #fff;
+}
+
+.header-tel {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: #fffff;
+}
+
+.header-link:hover,
+.header-link:hover,
+.header-tel:focus,
+.header-tel:focus {
+    color: #FF6C00;
+}
+
+.header-btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--main-btn-color);
+}
+
+.hero-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: #303030;
+    transform: rotate(-89.83deg);
+}
+
+.hero-link:hover,
+.header-link:focus {
+    color: #FF6C00;
+}
+
+.hero-top-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    background-color: gray;
+}
+
+.hero-bottom-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
+
+.about-top-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.about-title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    color: #303030;
+}
+
+.about p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #555555;
 }
