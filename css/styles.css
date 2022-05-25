@@ -4,10 +4,48 @@
     --main-title-color: #fff;
     --second-title-color: #303030;
     --accent-color: #FF6C00;
+    --typical-margin: 20px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 1200x;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .list {
@@ -68,6 +106,8 @@ body {
 
 .header {
     background: gray;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-link {
@@ -100,10 +140,6 @@ body {
 
 /* ----------------------HERO---------------------  */
 
-.hero-content {
-    background-color: #303030;
-}
-
 .hero-link {
     font-weight: 600;
     font-size: 11px;
@@ -117,8 +153,14 @@ body {
     color: var(--accent-color);
 }
 
+.hero-content {
+    background-color: #303030;
+    padding: 272px 96px 206px 96px;
+}
+
 .hero-top-text {
     color: rgba(157, 164, 189, 0.6);
+    margin-bottom: var(--typical-margin);
 }
 
 .hero-title {
@@ -127,25 +169,35 @@ body {
     line-height: 1.18;
     letter-spacing: 0.05em;
     color: var(--main-title-color);
+    margin-bottom: var(--typical-margin);
 }
 
 .hero-bottom-text {
     color: #9DA4BD;
+    max-width: 400px;
 }
 
 
 /* ----------------------ABOUT---------------------  */
 
+.about {
+    padding-top: 169px;
+    padding-bottom: 121px;
+}
+
 .about-top-text {
     color: #303030;
+    margin-bottom: var(--typical-margin);
 }
 
 .about-title {
     color: var(--second-title-color);
+    margin-bottom: var(--typical-margin);
 }
 
 .about-bottom-text {
     color: #555555;
+    margin-bottom: var(--typical-margin);
 }
 
 .about-text {
@@ -153,6 +205,7 @@ body {
     line-height: 1.86;
     letter-spacing: 0.02em;
     color: #555555;
+    margin-bottom: 40px;
 }
 
 .about-btn {
@@ -164,14 +217,28 @@ body {
 
 .prices {
     background-color: #303030;
+    padding-top: 130px;
+    padding-bottom: 130px;
 }
 
 .prices-top-text {
     color: rgba(157, 164, 189, 0.6);
+    margin-bottom: var(--typical-margin);
+}
+
+.prices-list {
+    border: 1px solid #fff;
+    padding: 30px 40px;
+    margin-bottom: 50px;
 }
 
 .prices-title {
     color: var(--main-title-color);
+    margin-bottom: 44px;
+}
+
+.prices-item {
+    margin-bottom: var(--typical-margin);
 }
 
 .prices-item-text {
@@ -183,12 +250,27 @@ body {
 
 .prices-btn {
     color: var(--main-btn-color);
+    margin: 0 auto;
+    display: block;
 }
 
 
 /* ----------------------BENEFITS---------------------  */
 
+.benefits {
+    padding-top: 143px;
+    padding-bottom: 137px;
+}
+
+.benefits-item {
+    width: 170px;
+    height: 130px;
+    border: 1px solid #000000;
+    padding: 20px 24px;
+}
+
 .benefits-item-coun {
+    display: block;
     font-weight: 700;
     font-size: 42px;
     line-height: calc(57 / 42);
@@ -207,10 +289,12 @@ body {
 
 .benefits-top-text {
     color: #303030;
+    margin-bottom: var(--typical-margin);
 }
 
 .benefits-title {
     color: var(--second-title-color);
+    margin-bottom: var(--typical-margin);
 }
 
 .benefits-bottom-text {
@@ -220,12 +304,18 @@ body {
 
 /* ----------------------MASTERS---------------------  */
 
+.masters {
+    padding: 130px 55px;
+}
+
 .masters-top-text {
     color: #303030;
+    margin-bottom: var(--typical-margin);
 }
 
 .masters-title {
     color: var(--second-title-color);
+    margin-bottom: 44px;
 }
 
 .masters-item-title {
@@ -235,6 +325,8 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: #303030;
+    margin-top: 30px;
+    margin-bottom: 8px;
 }
 
 .masters-item-text {
@@ -248,10 +340,13 @@ body {
 
 /* ----------------------GALLERY---------------------  */
 
-.gallery {}
+.gallery {
+    padding: 130px 55px;
+}
 
 .gallery-top-text {
     color: #303030;
+    margin-bottom: 44px;
 }
 
 
@@ -259,6 +354,7 @@ body {
 
 .online {
     background-color: #303030;
+    padding: 130px 40px 130px 55px;
 }
 
 .online-title {
@@ -270,6 +366,7 @@ body {
 
 .contacts {
     background-color: #303030;
+    padding: 130px 105px 130px 100px;
 }
 
 .contacts-title {
@@ -305,6 +402,10 @@ body {
 
 
 /* ----------------------FOOTER---------------------  */
+
+.footer {
+    padding: 55px;
+}
 
 .footer-copy {
     font-weight: 600;
