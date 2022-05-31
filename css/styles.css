@@ -329,6 +329,18 @@ body {
     margin-bottom: 44px;
 }
 
+.masters-list {
+    display: flex;
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+
+.masters-item {
+    width: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
 .masters-item-title {
     font-weight: 400;
     font-size: 18px;
