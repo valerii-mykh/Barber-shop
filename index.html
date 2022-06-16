@@ -20,9 +20,9 @@
             <a class="header-logo" href="./index.html"><img src="./image/logo.svg" alt="лого сайта"></a>
             <nav class="header-nav">
                 <ul class="header-list">
-                    <li class="header-item list"><a href="#aboutus" class="header-link link">О нас</a></li>
+                    <li class="header-item list"><a href="#aboutus" class="header-link current link">О нас</a></li>
                     <li class="header-item list">
-                        <a href="#price" class="header-link link">Услуги и цены</a>
+                        <a href="#price" class="header-link  link">Услуги и цены</a>
                     </li>
                     <li class="header-item list">
                         <a href="#masters" class="header-link link">Мастера</a>
@@ -33,7 +33,7 @@
                 </ul>
             </nav>
             <div class="header-connect"><a class="header-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-                <button class="header-btn btn" type="button">онлайн-запись</button></div>
+                <button class="header-btn btn" type="button" data-modal-open>онлайн-запись</button></div>
         </div>
 
     </header>
@@ -145,7 +145,13 @@
                 <h2 class="masters-title title">Наши мастера</h2>
                 <ul class="masters-list list">
                     <li class="masters-item ">
-                        <img src="./image/img1.jpg" alt="Барбер стриже клієнта" width="370" height="346">
+                        <div class="masters-top-wrap">
+                            <img src="./image/img1.jpg" alt="Барбер стриже клієнта" width="370" height="346">
+                            <p class="masters-top-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, esse aut tenetur ad, praesentium enim eligendi sunt ipsa nemo, iste quo laborum doloremque vitae neque ea laudantium veniam. Distinctio, ducimus.
+                            </p>
+                        </div>
+
                         <h3 lang="en" class="masters-item-title">John Smith</h3>
                         <p lang="en" class="masters-item-text">Extreme Barber</p>
                         <ul class="masters-soc-list list">
@@ -174,7 +180,12 @@
                         </ul>
                     </li>
                     <li class="masters-item ">
-                        <img src="./image/img2.jpg" alt="Барбер стриже клієнта" width="370" height="346">
+                        <div class="masters-top-wrap"> <img src="./image/img2.jpg" alt="Барбер стриже клієнта" width="370" height="346">
+                            <p class="masters-top-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, esse aut tenetur ad, praesentium enim eligendi sunt ipsa nemo, iste quo laborum doloremque vitae neque ea laudantium veniam. Distinctio, ducimus.
+                            </p>
+                        </div>
+
                         <h3 lang="en" class="masters-item-title">Michele Doe</h3>
                         <p lang="en" class="masters-item-text">Extreme Barber</p>
                         <ul class="masters-soc-list list">
@@ -203,7 +214,12 @@
                         </ul>
                     </li>
                     <li class="masters-item ">
-                        <img src="./image/img3.jpg" alt="Барбер стриже клієнта" width="370" height="346">
+                        <div class="masters-top-wrap"><img src="./image/img3.jpg" alt="Барбер стриже клієнта" width="370" height="346">
+                            <p class="masters-top-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, esse aut tenetur ad, praesentium enim eligendi sunt ipsa nemo, iste quo laborum doloremque vitae neque ea laudantium veniam. Distinctio, ducimus.
+                            </p>
+                        </div>
+
                         <h3 lang="en" class="masters-item-title">Alan Black</h3>
                         <p lang="en" class="masters-item-text">Extreme Barber</p>
                         <ul class="masters-soc-list list">
@@ -278,6 +294,31 @@
         </div>
 
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>X</button>
+            <p class="modal-title">Заголовок модального вікна</p>
+            <form>
+                <label class="modal-label">Ваше ім'я
+                <input type="text" class="modal-input" name="user-name" placeholder="Микола" required>
+            </label>
+                <div class="modal-field">
+                    <label for="user-tel" class="modal-label">Ваш номер телефону</label>
+                    <input type="tel" class="modal-input" name="user-tel" placeholder="+38 (050) 222-22-22" required pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" title="+38 (050) 222-22-22" id="user-tel">
+                </div>
+                <div class="modal-field">
+                    <label for="user-email" class="modal-label">Ваша електронна пошта</label>
+                    <input type="email" class="modal-input" name="user-email" placeholder="Ваша пошта" id="user-email">
+                </div>
+                <div class="modal-field">
+                    <label for="user-text" class="modal-label">Ваш коментарій</label>
+                    <textarea name="user-text" id="user-text" class="modal-text" placeholder="Введіть текст"></textarea>
+                </div>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
