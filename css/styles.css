@@ -691,7 +691,7 @@ body {
     resize: none;
 }
 
-.online .btn {
+.online-btn {
     margin-top: 44px;
     color: var(--main-btn-color);
     text-transform: uppercase;
