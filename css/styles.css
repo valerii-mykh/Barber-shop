@@ -395,7 +395,7 @@ body {
     padding-top: 143px;
     padding-bottom: 137px;
 }
-
+.benefits-container{display: flex;}
 .benefits-item {
     width: 170px;
     height: 133px;
@@ -458,7 +458,10 @@ body {
 .benefits-bottom-text {
     color: #555555;
 }
-
+.benefits-text{
+    width: 50%;
+    margin-left: auto;
+}
 
 /* ----------------------MASTERS---------------------  */
 
