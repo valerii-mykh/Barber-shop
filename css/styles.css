@@ -78,7 +78,15 @@ body {
     display: flex;
     align-items: center;
 }
-.top-text--light{}
+
+.top-text--light {
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.top-text--dark {
+    color: #303030;
+}
+
 .top-text::before {
     content: "";
     width: 70px;
@@ -94,6 +102,14 @@ body {
     font-size: 42px;
     line-height: calc(49 /42);
     letter-spacing: 0.05em;
+}
+
+.title--light {
+    color: var(--main-title-color);
+}
+
+.title--dark {
+    color: var(--second-title-color);
 }
 
 .btn {
@@ -242,7 +258,7 @@ body {
 }
 
 .hero-content__top-text {
-    color: rgba(157, 164, 189, 0.6);
+
     margin-bottom: var(--typical-margin);
 }
 
@@ -251,7 +267,6 @@ body {
     font-size: 72px;
     line-height: 1.18;
     letter-spacing: 0.05em;
-    color: var(--main-title-color);
     margin-bottom: var(--typical-margin);
 }
 
@@ -287,7 +302,6 @@ body {
 }
 
 .about-content__title {
-    color: var(--second-title-color);
     margin-bottom: var(--typical-margin);
 }
 
@@ -395,7 +409,11 @@ body {
     padding-top: 143px;
     padding-bottom: 137px;
 }
-.benefits-container{display: flex;}
+
+.benefits-container {
+    display: flex;
+}
+
 .benefits-item {
     width: 170px;
     height: 133px;
@@ -458,7 +476,8 @@ body {
 .benefits-bottom-text {
     color: #555555;
 }
-.benefits-text{
+
+.benefits-text {
     width: 50%;
     margin-left: auto;
 }
@@ -470,39 +489,37 @@ body {
     background: #F7F7F7;
 }
 
-.masters-top-text {
+.masters__top-text {
     color: #303030;
-    margin-bottom: var(--typical-margin);
 }
 
-.masters-title {
-    color: var(--second-title-color);
+.masters__title {
     margin-bottom: 44px;
 }
 
-.masters-list {
+.card-list {
     display: flex;
     margin-left: -30px;
     margin-bottom: -30px;
 }
 
-.masters-item {
+.card-list__item {
     width: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
 }
 
-.masters-item:hover .masters-top-text,
-.masters-item:focus .masters-top-text {
+.card-list__item:hover .card-list__top-text,
+.card-list__item:focus .card-list__top-text {
     transform: translateY(0);
 }
 
-.masters-top-wrap {
+.card-list__top-wrap {
     position: relative;
     overflow: hidden;
 }
 
-.masters-top-text {
+.card-list__top-text {
     position: absolute;
     top: 0;
     color: #fff;
@@ -514,7 +531,7 @@ body {
     transition: transform 300ms linear;
 }
 
-.masters-item-title {
+.card-list__item-title {
     font-weight: 400;
     font-size: 18px;
     line-height: calc(25 / 18);
@@ -525,7 +542,7 @@ body {
     margin-bottom: 8px;
 }
 
-.masters-item-text {
+.card-list__item-text {
     font-size: 14px;
     line-height: calc(19 / 14);
     text-align: center;
