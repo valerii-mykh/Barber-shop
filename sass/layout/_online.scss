@@ -30,10 +30,9 @@
   outline: none;
   transition: border-color 300ms linear;
   color: rgba(202, 207, 226, 0.8);
-}
-
-.online-input:focus {
-  border-color: #fff;
+  &:focus {
+    border-color: #fff;
+  }
 }
 
 .online-label {
@@ -47,14 +46,13 @@
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
   transition: transform 300ms linear, color 300ms linear;
-}
-
-.online-input:focus + .online-label,
-.online-text:focus + .online-label,
-.online-input:not(:placeholder-shown) + .online-label,
-.online-text:not(:placeholder-shown) + .online-label {
-  color: #fff;
-  transform: translateY(-100%);
+  .online-input:focus + &,
+  .online-text:focus + &,
+  .online-input:not(:placeholder-shown) + &,
+  .online-text:not(:placeholder-shown) + & {
+    color: #fff;
+    transform: translateY(-100%);
+  }
 }
 
 .text-field {

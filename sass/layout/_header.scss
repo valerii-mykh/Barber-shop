@@ -32,13 +32,10 @@
   color: #fff;
   transition: color 300ms ease;
   position: relative;
-}
-
-.nav__link:hover,
-.nav__link:focus,
-.connect__tel:hover,
-.connect__tel:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .nav__link.current:after {
