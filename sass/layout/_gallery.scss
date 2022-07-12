@@ -1,0 +1,35 @@
+.gallery {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.gallery-top-text {
+  color: #303030;
+  margin-bottom: 44px;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.gallery-item {
+  width: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.contacts-wrap {
+  display: flex;
+  background-color: #191c26;
+  background-image: url(../image/Bgfooter.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: calc(50% - 15px);
+}
+
+.contacts-wrap .container {
+  display: flex;
+}
