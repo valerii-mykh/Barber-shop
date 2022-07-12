@@ -1,8 +1,16 @@
 @import "./utils/vars";
+@import "./utils/hidden";
 
 @import "./base/reset";
+@import "./base/common";
 
 @import "./components/container";
+@import "./components/top-text";
+@import "./components/title";
+@import "./components/btn";
+@import "./components/bottom-text";
+@import "./components/socials";
+@import "./components/modal";
 
 @import "./layout/header";
 @import "./layout/hero";
@@ -11,7 +19,7 @@
 @import "./layout/benefits";
 @import "./layout/masters";
 @import "./layout/gallery";
+@import "./layout/contact-wrap";
 @import "./layout/online";
 @import "./layout/contacts";
 @import "./layout/footer";
-@import "./layout/backdrop";
