@@ -73,11 +73,11 @@
   color: #090b13;
   outline: none;
   &:focus {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
   }
 
   &:focus + .modal-icon {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
 
   &:not(:placeholder-shown):not(:focus):valid {
@@ -113,15 +113,14 @@
   margin-bottom: 10px;
   outline: none;
   &:focus {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
   }
 }
 
 .check-test {
   color: #555555;
   font-size: 14px;
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   position: relative;
   &::before {
     content: "";
@@ -163,8 +162,7 @@
     border: 2px solid #090B13;
     border-radius: 3px;
     margin-right: 5px;
-    display: flex;
-    align-items: center;
+     @extend %align-list;
     justify-content: center;
 }
 

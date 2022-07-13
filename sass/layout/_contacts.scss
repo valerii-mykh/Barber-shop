@@ -6,7 +6,7 @@
 }
 
 .contacts-title {
-  color: var(--main-title-color);
+  color: $main-title-color;
   margin-bottom: 40px;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .contacts-item + .contacts-item {
-  margin-top: var(--typical-margin);
+  margin-top: $typical-margin;
 }
 
 .contacts-item-link {
@@ -33,7 +33,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: var(--typical-margin);
+  margin-bottom: $typical-margin;
   &::before {
     content: "";
     width: 60px;

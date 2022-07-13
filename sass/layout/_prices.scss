@@ -12,11 +12,11 @@
 
 .prices-top-text {
   color: rgba(157, 164, 189, 0.6);
-  margin-bottom: var(--typical-margin);
+  margin-bottom: $typical-margin;
 }
 
 .prices-title {
-  color: var(--main-title-color);
+  color: $main-title-color;
   margin-bottom: 44px;
 }
 
@@ -41,7 +41,7 @@
 .prices-item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: var(--typical-margin);
+  margin-bottom: $typical-margin;
   align-items: baseline;
   &::before {
     content: "";
@@ -68,7 +68,7 @@
 }
 
 .prices-btn {
-  color: var(--main-btn-color);
+  color: $main-btn-color;
   margin: 0 auto;
   display: block;
 }

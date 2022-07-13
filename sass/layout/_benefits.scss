@@ -41,7 +41,7 @@
     font-size: 16px;
     line-height: 1.38;
     text-align: center;
-    color: var(--accent-color);
+    color: $accent-color;
     vertical-align: top;
   }
 }
@@ -56,12 +56,12 @@
 
 .benefits-top-text {
   color: #303030;
-  margin-bottom: var(--typical-margin);
+  margin-bottom: $typical-margin;
 }
 
 .benefits-title {
   color: var(--second-title-color);
-  margin-bottom: var(--typical-margin);
+  margin-bottom: $typical-margin;
 }
 
 .benefits-bottom-text {

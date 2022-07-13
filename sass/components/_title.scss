@@ -6,10 +6,10 @@
   line-height: calc(49 / 42);
   letter-spacing: 0.05em;
   &--light {
-    color: var(--main-title-color);
+    color: $main-title-color;
   }
 
   &--dark {
-    color: var(--second-title-color);
+    color: $second-title-color;
   }
 }

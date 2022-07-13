@@ -17,18 +17,17 @@
   height: 100%;
   background-color: #ffffff;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
   color: #303030;
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 
   /* &:hover .socials__icon,
   &:focus .socials__icon {
-      fill: var(--accent-color);
+      fill: $accent-color$;
   } */
 }
 

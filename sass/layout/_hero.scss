@@ -11,10 +11,9 @@
 }
 
 .soc__list {
-  display: flex;
   transform: rotate(-90deg) translate(-19px);
   transform-origin: top left;
-  align-items: center;
+  @extend %align-list;
   &::before {
     content: "";
     width: 60px;
@@ -37,7 +36,7 @@
   transition: color 300ms ease;
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 .hero-content {
@@ -55,7 +54,7 @@
 }
 
 .hero-content__top-text {
-  margin-bottom: var(--typical-margin);
+  margin-bottom: $typical-margin;
 }
 
 .hero-content__title {
@@ -63,7 +62,7 @@
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
-  margin-bottom: var(--typical-margin);
+  margin-bottom: $typical-margin;
 }
 
 .hero-content__bottom-text {

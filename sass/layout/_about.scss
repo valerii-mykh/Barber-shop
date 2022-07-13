@@ -7,15 +7,15 @@
 
   &-content__top-text {
     color: #303030;
-    margin-bottom: var(--typical-margin);
+    margin-bottom: $typical-margin;
   }
 
   &-content__title {
-    margin-bottom: var(--typical-margin);
+    margin-bottom: $typical-margin;
   }
   &-content__bottom-text {
     color: #555555;
-    margin-bottom: var(--typical-margin);
+    margin-bottom: $typical-margin;
   }
 
   &-content__text {
@@ -27,7 +27,7 @@
   }
 
   &-content__btn {
-    color: var(--second-btn-color);
+    color: $second-btn-color;
   }
 }
 

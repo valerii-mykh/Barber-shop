@@ -16,6 +16,6 @@
   color: #303030;
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }

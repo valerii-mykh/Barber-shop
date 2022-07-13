@@ -6,7 +6,7 @@
 }
 
 .online-title {
-  color: var(--main-title-color);
+  color: $main-title-color;
   margin-bottom: 44px;
 }
 
@@ -75,7 +75,7 @@
 
 .online-btn {
   margin-top: 44px;
-  color: var(--main-btn-color);
+  color: $main-btn-color;
   text-transform: uppercase;
 }
 
@@ -85,7 +85,7 @@ textarea::-webkit-scrollbar {
 
 textarea::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 }
 
 textarea::-webkit-scrollbar-thumb {
