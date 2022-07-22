@@ -1,26 +1,39 @@
 .masters {
-  padding: 130px 55px;
-  background: #f7f7f7;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }
 
 .masters__top-text {
-  color: #303030;
+  margin-bottom: $typical-margin;
 }
 
 .masters__title {
+  color: $second-title-color;
   margin-bottom: 44px;
 }
 
 .card-list {
   display: flex;
-  margin-left: -30px;
-  margin-bottom: -30px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .card-list__item {
-  width: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-bottom: 30px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .card-list__top-wrap {
