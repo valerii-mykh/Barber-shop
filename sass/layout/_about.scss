@@ -62,6 +62,10 @@
     width: 330px;
     height: 235px;
   }
+  @include tablet {
+    width: 270px;
+    height: auto;
+  }
 }
 .pic-list__item + .pic-list__item {
   margin-top: 30px;

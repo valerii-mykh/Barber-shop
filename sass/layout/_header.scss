@@ -80,7 +80,10 @@
 .connect__btn {
   color: $main-btn-color;
   margin-left: 40px;
-  margin-bottom: 20px;
+
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 .connect {
@@ -91,6 +94,13 @@
     flex-direction: column-reverse;
     margin-right: auto;
     text-align: center;
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    text-align: center;
+    align-items: baseline;
   }
 }
 .menu-open-btn,

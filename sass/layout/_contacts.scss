@@ -26,6 +26,7 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  flex-direction: column;
 }
 .contacts-item + .contacts-item {
   margin-top: $typical-margin;
