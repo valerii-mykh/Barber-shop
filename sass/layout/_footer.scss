@@ -1,5 +1,20 @@
 .footer {
-  padding: 55px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  @include desktop {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-list {
+  display: flex;
+}
+.footer-item {
+  margin-right: 10px;
 }
 .footer-copy {
   font-weight: 600;

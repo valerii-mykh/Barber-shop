@@ -7,16 +7,28 @@
 
 .header__container {
   @extend %align-list;
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .header__logo {
   margin-right: 70px;
+  color: #fff;
+  @include tablet {
+    color: #303030;
+    margin-right: 50px;
+  }
+  @include desktop {
+    margin-right: 70px;
+  }
 }
 .nav {
   display: none;
-}
-.header__logo {
-  color: #fff;
+  @include tablet {
+    display: block;
+  }
 }
 
 .nav__list {
@@ -24,7 +36,15 @@
 }
 
 .nav__item:not(:last-child) {
-  margin-right: 40px;
+  @include tablet {
+    margin-right: 25px;
+  }
+  @include desktop {
+    margin-right: 40px;
+  }
+}
+.connect__tel {
+  margin-left: 40px;
 }
 
 .nav__link,
@@ -36,11 +56,13 @@
   color: #fff;
   transition: color 300ms ease;
   position: relative;
+  white-space: nowrap;
   &:hover,
   &:focus {
     color: $accent-color;
   }
 }
+
 .current.link {
   color: $accent-color;
 }
@@ -58,11 +80,18 @@
 .connect__btn {
   color: $main-btn-color;
   margin-left: 40px;
+  margin-bottom: 20px;
 }
 
 .connect {
   display: none;
   margin-left: auto;
+  @include tablet {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-right: auto;
+    text-align: center;
+  }
 }
 .menu-open-btn,
 .menu-close-btn {
@@ -71,6 +100,9 @@
   background-color: unset;
   border: none;
   color: #fff;
+  @include tablet {
+    display: none;
+  }
 }
 .menu-close-btn {
   margin-bottom: 30px;

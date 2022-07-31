@@ -13,7 +13,7 @@
   color: $main-title-color;
   margin-bottom: 40px;
   text-align: center;
-  @include desktop {
+  @include tablet {
     text-align: left;
   }
 }
@@ -22,7 +22,11 @@
   font-style: normal;
   margin-bottom: 70px;
 }
-
+.address-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
 .contacts-item + .contacts-item {
   margin-top: $typical-margin;
 }

@@ -110,10 +110,27 @@
         <section id="aboutus" class="about">
             <div class="container about-container">
                 <ul class="pic-list">
-                    <li class="pic-list__item list"><img src="./image/img_1.jpg" alt="барбер бреет бороду" width="270"
-                            height="445"></li>
-                    <li class="pic-list__item list"><img src="./image/img_2.jpg" alt="барбер бреет шею" width="270"
-                            height="445"></li>
+                    <li class="pic-list__item list">
+                        <picture>
+                            <source srcset="./image/about/img_1.jpg 1x, ./image/about/img_1-x2.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./image/about/img_1-tab.jpg 1x, ./image/about/img_1-tab-x2.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <img src="./image/about/img_1-tab.jpg" alt="Барбер бреет бороду">
+                        </picture>
+                        <!-- <img src="./image/img_1.jpg" alt="барбер бреет бороду" width="270" height="445"> -->
+                    </li>
+                    <li class="pic-list__item list">
+                        <picture>
+                            <source srcset="./image/about/img_2.jpg 1x, ./image/about/img_2-x2.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./image/about/img_2-tab.jpg 1x, ./image/about/img_2-tab-x2.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <img src="./image/about/img_2-tab.jpg" alt="Барбер бреет шею">
+                        </picture>
+                        <!-- <img src="./image/img_2.jpg" alt="барбер бреет шею" width="270"
+                            height="445">-->
+                    </li>
                 </ul>
                 <div class="about-content">
                     <p class="about-content__top-text top-text top-text--dark">О нас</p>
@@ -423,26 +440,32 @@
                 </section>
                 <section id="contacts" class="contacts">
                     <h2 class="contacts-title title">Контакты</h2>
-                    <address class="contacts-address">
-                        <ul class="contacts-list list">
-                            <li class="contacts-item"><a class="contacts-item-link link"
-                                    href="https://goo.gl/maps/iEST2E7DS7heyXNW9" target="_blank"
-                                    rel="noopener nofollow noreferree">ул. Васильковая, 7А
-                                    Киев, 08132</a></li>
-                            <li class="contacts-item"><a class="contacts-item-link link" href="tel:+380441111111">+38
-                                    044 111 11 11</a></li>
-                            <li class="contacts-item"><a class="contacts-item-link "
-                                    href="mailto:barbershop@email.com">barbershop@email.com</a></li>
-                        </ul>
-                    </address>
-                    <p class="contacts-subtitle">Время работы</p>
-                    <p class="contacts-time">Ежедневно с 9:00 до 22:00</p>
+                    <div class="address-wrap">
+                        <address class="contacts-address">
+                            <ul class="contacts-list list">
+                                <li class="contacts-item"><a class="contacts-item-link link"
+                                        href="https://goo.gl/maps/iEST2E7DS7heyXNW9" target="_blank"
+                                        rel="noopener nofollow noreferree">ул. Васильковая, 7А
+                                        Киев, 08132</a></li>
+                                <li class="contacts-item"><a class="contacts-item-link link"
+                                        href="tel:+380441111111">+38
+                                        044 111 11 11</a></li>
+                                <li class="contacts-item"><a class="contacts-item-link "
+                                        href="mailto:barbershop@email.com">barbershop@email.com</a></li>
+                            </ul>
+                        </address>
+                        <div class="address-time">
+                            <p class="contacts-subtitle">Время работы</p>
+                            <p class="contacts-time">Ежедневно с 9:00 до 22:00</p>
+                        </div>
+                    </div>
+
                 </section>
             </div>
         </div>
     </main>
     <!-- FOOTER -->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container footer-container">
             <p class="footer-copy">&copy; Copyright 2020</p>
             <ul class="footer-list list">
@@ -453,7 +476,7 @@
             </ul>
         </div>
 
-    </footer> -->
+    </footer>
     <!-- BACKDROP -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">

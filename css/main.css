@@ -387,20 +387,51 @@ body {
   width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .header__logo {
   margin-right: 70px;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    color: #303030;
+    margin-right: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 70px;
+  }
 }
 
 .nav {
   display: none;
 }
-
-.header__logo {
-  color: #fff;
+@media screen and (min-width: 768px) {
+  .nav {
+    display: block;
+  }
 }
 
-.nav__item:not(:last-child) {
-  margin-right: 40px;
+@media screen and (min-width: 768px) {
+  .nav__item:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__item:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.connect__tel {
+  margin-left: 40px;
 }
 
 .nav__link,
@@ -412,6 +443,7 @@ body {
   color: #fff;
   transition: color 300ms ease;
   position: relative;
+  white-space: nowrap;
 }
 .nav__link:hover, .nav__link:focus,
 .connect__tel:hover,
@@ -437,11 +469,20 @@ body {
 .connect__btn {
   color: #fff;
   margin-left: 40px;
+  margin-bottom: 20px;
 }
 
 .connect {
   display: none;
   margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .connect {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-right: auto;
+    text-align: center;
+  }
 }
 
 .menu-open-btn,
@@ -451,6 +492,12 @@ body {
   background-color: unset;
   border: none;
   color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .menu-open-btn,
+.menu-close-btn {
+    display: none;
+  }
 }
 
 .menu-close-btn {
@@ -551,7 +598,7 @@ body {
     padding-bottom: 15px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero-container {
     width: 1200px;
   }
@@ -565,6 +612,8 @@ body {
 @media screen and (min-width: 768px) {
   .soc {
     display: flex;
+    margin-left: 20px;
+    width: 60px;
   }
 }
 
@@ -676,8 +725,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .about {
-    padding-top: 84px;
-    padding-bottom: 84px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -718,15 +767,35 @@ body {
 .pic-list {
   display: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .pic-list {
     display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pic-list {
+    flex-direction: row;
     margin-right: 64px;
   }
 }
 
+@media screen and (min-width: 768px) {
+  .pic-list__item {
+    width: 330px;
+    height: 235px;
+  }
+}
+
 .pic-list__item + .pic-list__item {
-  margin-left: 30px;
+  margin-top: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .pic-list__item + .pic-list__item {
+    margin-top: 0;
+    margin-left: 30px;
+  }
 }
 
 .prices {
@@ -742,8 +811,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .prices {
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -958,11 +1027,6 @@ body {
 .card-list__item {
   width: 100%;
 }
-@media screen and (min-width: 768px) {
-  .card-list__item {
-    width: calc((100% - 60px) / 3);
-  }
-}
 @media screen and (min-width: 1200px) {
   .card-list__item {
     width: calc((100% - 60px) / 3);
@@ -1056,8 +1120,13 @@ body {
   background-color: #191c26;
   background-image: url(../image/Bgfooter.png);
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: bottom;
   background-size: calc(100% - 15px);
+}
+@media screen and (min-width: 768px) {
+  .contacts-wrap {
+    background-size: calc(100% - 30px);
+  }
 }
 @media screen and (min-width: 1200px) {
   .contacts-wrap {
@@ -1104,6 +1173,11 @@ body {
 .input-field {
   position: relative;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .input-field {
+    width: 330px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .input-field {
@@ -1200,7 +1274,7 @@ textarea::-webkit-scrollbar-thumb {
   margin-bottom: 40px;
   text-align: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .contacts-title {
     text-align: left;
   }
@@ -1209,6 +1283,12 @@ textarea::-webkit-scrollbar-thumb {
 .contacts-address {
   font-style: normal;
   margin-bottom: 70px;
+}
+
+.address-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .contacts-item + .contacts-item {
@@ -1247,7 +1327,27 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .footer {
-  padding: 55px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-list {
+  display: flex;
+}
+
+.footer-item {
+  margin-right: 10px;
 }
 
 .footer-copy {
