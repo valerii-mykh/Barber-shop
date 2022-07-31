@@ -203,7 +203,7 @@ body {
 }
 
 .modal {
-  width: 500px;
+  width: 100vw;
   min-height: 600px;
   background-color: #fff;
   border-radius: 5px;
@@ -214,6 +214,11 @@ body {
   transition: transform 300ms;
   padding: 40px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 500px;
+  }
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0) rotate(180deg);
