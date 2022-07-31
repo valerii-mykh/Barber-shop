@@ -1,10 +1,18 @@
 .benefits {
-  padding-top: 143px;
-  padding-bottom: 137px;
+  padding-top: 85px;
+  padding-bottom: 85px;
+  @include desktop {
+    padding-top: 143px;
+    padding-bottom: 137px;
+  }
 }
 
 .benefits-container {
   display: flex;
+  flex-direction: column-reverse;
+  @include desktop {
+    flex-direction: row;
+  }
 }
 
 .benefits-item {
@@ -69,6 +77,10 @@
 }
 
 .benefits-text {
-  width: 50%;
+  width: 100%;
   margin-left: auto;
+  margin-bottom: 45px;
+  @include desktop {
+    width: 50%;
+  }
 }

@@ -4,10 +4,18 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 84px;
+  padding-bottom: 84px;
   max-width: 1280px;
   margin: 0 auto;
+  @include tablet {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+  @include desktop {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }
 
 .prices-top-text {
@@ -22,12 +30,20 @@
 
 .prices-wrap {
   display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  @include desktop {
+    flex-direction: row;
+  }
 }
 
 .prices-list {
-  padding: 30px 40px;
-  margin-bottom: 50px;
-  flex-grow: 1;
+  padding: 10px 20px;
+  @include desktop {
+    padding: 30px 40px;
+
+    flex-grow: 1;
+  }
 }
 
 .light {
@@ -35,7 +51,10 @@
 }
 
 .dark {
-  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  background: linear-gradient(359deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  @include desktop {
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
 }
 
 .prices-item {
